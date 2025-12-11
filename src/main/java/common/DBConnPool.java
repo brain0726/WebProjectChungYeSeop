@@ -31,7 +31,7 @@ public class DBConnPool {
 			//Tomcat의 Root디렉토리를 얻어옴
 			Context ctx = (Context)initCtx.lookup("java:comp/env");
 			//그 안에서 미리 생성한 커넥션풀 객체를 얻어온다.
-			DataSource source = (DataSource)ctx.lookup("dbcp_myoracle");
+			DataSource source = (DataSource)ctx.lookup("dbcp_webproject");
 			//이를 통해 DB에 연결한다. 즉 커넥션 객체를 가져다가 사용한다.
 			con = source.getConnection();
 			System.out.println("DB 커넥션 풀 연결 성공");
