@@ -56,11 +56,13 @@
 
               <div>
                 <input type="text" name="user_name" class="form-control"
+                placeholder="이름" 
                        value="<%=dto.getName()%>" required />
               </div>
 
               <div>
                 <input type="email" name="user_email" class="form-control"
+                placeholder="이메일" 
                        value="<%=dto.getEmail()%>" required />
               </div>
 				

@@ -29,7 +29,7 @@ public class ViewController  extends HttpServlet {
 
         req.setAttribute("dto", dto);  // JSP로 전달
 
-        req.getRequestDispatcher("/freeList.do").forward(req, resp);
+        req.getRequestDispatcher("/freeview.jsp").forward(req, resp);
     }
 
 }

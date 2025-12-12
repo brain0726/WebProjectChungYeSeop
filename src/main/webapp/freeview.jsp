@@ -48,9 +48,6 @@
 <!-- 본문 컨테이너 -->
 <div class="content-wrap" style="max-width: 900px; margin: 50px auto; padding: 20px;">
     
-    <h1 style="font-size: 32px; color: #B22222; font-weight: bold; margin-bottom: 20px;">
-        ${ dto.title }
-    </h1>
 
     <div style="border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 20px;">
         <span style="font-weight: bold;">${ dto.id }</span> |
@@ -58,9 +55,22 @@
         <span>조회수: ${ dto.visitcount }</span>
     </div>
 
+ 	<h2 style="color:#b30000;">${dto.title}</h2>
+ 	
     <div style="white-space: pre-wrap; font-size: 18px; line-height: 1.7;">
         ${ dto.content }
     </div>
+    
+    
+    <hr>
+
+    <div style="text-align:right;">
+        <a href="freeList.do"><button>목록</button></a>
+        <a href="Write.do"><button>수정</button></a>
+    </div>
+
+    <hr><br>
+    
 </div>
 </body>
 </html>
